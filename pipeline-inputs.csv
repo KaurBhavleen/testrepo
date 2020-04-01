@@ -1,2 +1,0 @@
-testTopology,sdwanControllerIP,awsRegions,vpcCidrList,branchCreationTemplate,testCasesList
-full-mesh,52.24.86.201,us-west-2,10.121.0.0/16#10.122.0.0/16,Customer1_Poststaging_2W1L,smokeTest#versaConnectivityTest
