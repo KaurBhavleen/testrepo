@@ -9,7 +9,7 @@ pipeline  {
         
             script {
               def counter=0
-              readFile("https://github.com/KaurBhavleen/testrepo.git/Jenkins/pipeline-inputs.csv").split('\n').each { line, count ->
+              readFile("Jenkins/pipeline-inputs.csv").split('\n').each { line, count ->
                 def fields = line.split(',')
                 counter = counter + 1
                 for(String item: fields) {
