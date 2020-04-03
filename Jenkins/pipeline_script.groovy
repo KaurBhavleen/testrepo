@@ -1,4 +1,4 @@
-def staticStackName = "testpipeline"
+#def staticStackName = "testpipeline"
 
 pipeline  {
    agent any
