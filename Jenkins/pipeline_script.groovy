@@ -1,4 +1,3 @@
-#def staticStackName = "testpipeline"
 
 pipeline  {
    agent any
@@ -35,16 +34,7 @@ stage('Terminate Cloudformation Stack') {
       steps {
       script {
       for (int c = 1; c <= branchVPC.size(); c++) {
-                 stackName = staticStackName + c
-                 
-
-
-                     results = ansibleTower async: false, credential: '', extraVars: """---
-  stackName:  "${stackName}"
-  regionName:  "${awsRegion}"
-  
-
-  """, importTowerLogs: true, importWorkflowChildLogs: false, inventory: '', jobTags: '', jobTemplate: 'AwsBranchDeletion', jobType: 'run', limit: '', removeColor: false, skipJobTags: '', templateType: 'job', throwExceptionWhenFail: true, towerCredentialsId: 'AnsibleTowerAuth', towerServer: 'AnsibleTowerAWS', verbose: false
+          echo 'Test Chaining of Pipeline'
 
                 }
 
