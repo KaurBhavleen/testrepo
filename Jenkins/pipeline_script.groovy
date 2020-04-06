@@ -30,7 +30,7 @@ pipeline  {
           }
         }
 
-stage('Terminate Cloudformation Stack') {
+stage('Print Test Statement') {
       steps {
       script {
       for (int c = 1; c <= branchVPC.size(); c++) {
