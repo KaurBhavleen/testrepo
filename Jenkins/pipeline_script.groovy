@@ -34,7 +34,7 @@ stage('Terminate Cloudformation Stack') {
       steps {
       script {
       for (int c = 1; c <= branchVPC.size(); c++) {
-          echo 'Test Chaining of Pipeline'
+          echo 'Test Chaining of Pipeline.'
 
                 }
 
